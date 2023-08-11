@@ -4,6 +4,8 @@
     align-items: center;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    position: relative;
+    z-index: 9999;
 }
 
 .header__menu{
