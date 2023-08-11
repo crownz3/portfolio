@@ -24,7 +24,7 @@
         </li>
         <li class="header__line"></li>
         <li>
-          <button class="header__sun">
+          <button class="header__sun"  id="theme-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -41,7 +41,6 @@
           stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
         </svg>
-
       </button>
     </nav>
   </header>
@@ -60,7 +59,7 @@
         </li>
         <li class="mobile-nav__link-line"></li>
         <li>
-          <button class="mobile-nav__sun">
+          <button class="mobile-nav__sun" id="theme-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -69,7 +68,7 @@
           </button>
         </li>
         <li>
-          <a href="" class="mobile-nav__btn btn">Resume</a>
+          <a href="public/Resume.pdf" download class="mobile-nav__btn btn">Resume</a>
         </li>
       </ul>
     </nav>
@@ -280,6 +279,12 @@
   <footer class="footer container section">
     <h3 class="footer__title">~ IBU | SAB ~</h3>
   </footer>
+
+  <button class="body__arrow btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+    </svg>
+  </button>
   <script type="module" src="src/main.js"></script>
 </body>
 

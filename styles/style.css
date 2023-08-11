@@ -38,10 +38,19 @@ html{
   scroll-behavior: smooth;
 }
 
+.light-mode{
+  --clr-light:#070a13;
+  --clr-dark:#f1f5f9;
+  --clr-slate400:#1e293b;
+  --clr-slate600:#1e293b;
+  --clr-slate800:#1e293b;
+}
+
 body{
   font-family: 'General Sans', sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
+  position: relative;
 }
 
 img,picture,video,canvas,svg{
@@ -62,4 +71,17 @@ a{
 
 strong{
   color: var(--clr-rose);
+}
+
+.body__arrow{
+  display: none ;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  color: var(--clr-light);
+  background-color: var(--clr-purple);
+  font-weight: 600;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 10px;
 }
