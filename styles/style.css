@@ -1,80 +1,84 @@
-:root{
-  --clr-dark:#070a13;
-  --clr-light:#f1f5f9;
-  --clr-slate400:#94a3b8;
-  --clr-slate600:#475569;
-  --clr-slate800:#1e293b;
-  --clr-purple:#9333ea;
-  --clr-rose:#e11d48;
+:root {
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-purple: #9333ea;
+  --clr-rose: #e11d48;
 
   /* rose rgb(255,29,72) */
   /* purple rgb(147, 51, 234)*/
 
   /* sizes */
 
-  --size-xxs:0.5rem;
-  --size-xs:0.75rem;
-  --size-sm:0.875rem;
-  --size-base:1rem;
-  --size-lg:1.125rem;
-  --size-xl:1.25rem;
-  --size-2xl:1.5rem;
-  --size-3xl:1.875rem;
-  --size-4xl:2.25rem;
-  --size-5xl:3rem;
-  --size-6xl:3.75rem;
-  --size-7xl:4.5rem;
-  --size-8xl:6rem;
-  --size-9xl:8rem;
-  --size-10xl:10rem;
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
 }
 
-*{
+* {
   margin: 0;
   line-height: calc(1em = 0.5em);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.light-mode{
-  --clr-light:#070a13;
-  --clr-dark:#f1f5f9;
-  --clr-slate400:#1e293b;
-  --clr-slate600:#1e293b;
-  --clr-slate800:#1e293b;
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
 }
 
-body{
+body {
   font-family: 'General Sans', sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   position: relative;
 }
 
-img,picture,video,canvas,svg{
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   user-select: none;
 }
 
-button{
+button {
   all: unset;
   color: inherit;
   cursor: pointer;
 }
 
-a{
+a {
   color: var(--clr-purple);
 }
 
-strong{
+strong {
   color: var(--clr-rose);
 }
 
-.body__arrow{
-  display: none ;
+.body__arrow {
+  display: none;
   position: fixed;
   width: 20px;
   height: 20px;
@@ -84,4 +88,19 @@ strong{
   border-radius: 50%;
   bottom: 50px;
   right: 10px;
+}
+
+/* ScrollBar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-purple);
+  outline: 1px solid var(--clr-purple);
+  border-radius: 24px;
 }
