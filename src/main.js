@@ -11,9 +11,11 @@ import '../styles/components/mobile-nav.css';
 import '../styles/utils.css';
 import mobileNavBar from './utils/mobile-nav';
 import darkMode from './utils/dark-mode'
-
+import lazyLoading from './utils/lazy-loading';
 mobileNavBar();
-darkMode()
+darkMode();
+lazyLoading();
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
